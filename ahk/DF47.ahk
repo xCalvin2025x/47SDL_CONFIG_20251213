@@ -6,7 +6,7 @@
 /*
 定义常量
 */
-SleepTime := 25
+SleepTime := 15
 
 /*
 窗口移动
@@ -34,5 +34,45 @@ Z轴快速移动
 }
 
 /*
-下翻5次和上翻5次
+快速1
 */
++Home:: {
+    loop 5 {
+        Send("{Home}")
+        Sleep(SleepTime)
+    }
+}
++End:: {
+    loop 5 {
+        Send("{End}")
+        Sleep(SleepTime)
+    }
+}
+
+/*
+快速2
+*/
++Up:: {
+    loop 5 {
+        Send("{Up}")
+        Sleep(SleepTime)
+    }
+}
++Down:: {
+    loop 5 {
+        Send("{Down}")
+        Sleep(SleepTime)
+    }
+}
++Left:: {
+    loop 5 {
+        Send("{Left}")
+        Sleep(SleepTime)
+    }
+}
++Right:: {
+    loop 5 {
+        Send("{Right}")
+        Sleep(SleepTime)
+    }
+}
