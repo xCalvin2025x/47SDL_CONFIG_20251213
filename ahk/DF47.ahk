@@ -6,7 +6,7 @@
 /*
 定义常量
 */
-SleepTime := 15
+SleepTime := 20
 
 /*
 窗口移动
@@ -18,7 +18,22 @@ SleepTime := 15
 }
 
 /*
-Z轴快速移动
+Z轴快速5
+*/
+!Insert:: {
+    loop 5 {
+        Send("{Insert}")
+        Sleep(SleepTime)
+    }
+}
+!Delete:: {
+    loop 5 {
+        Send("{Delete}")
+        Sleep(SleepTime)
+    }
+}
+/*
+Z轴快速10
 */
 +Insert:: {
     loop 10 {
@@ -34,44 +49,86 @@ Z轴快速移动
 }
 
 /*
-快速1
+快速5
 */
-+Home:: {
+!Home:: {
     loop 5 {
         Send("{Home}")
         Sleep(SleepTime)
     }
 }
-+End:: {
+!End:: {
     loop 5 {
+        Send("{End}")
+        Sleep(SleepTime)
+    }
+}
+/*
+快速10
+*/
++Home:: {
+    loop 10 {
+        Send("{Home}")
+        Sleep(SleepTime)
+    }
+}
++End:: {
+    loop 10 {
         Send("{End}")
         Sleep(SleepTime)
     }
 }
 
 /*
-快速2
+快速5
 */
-+Up:: {
+!Up:: {
     loop 5 {
         Send("{Up}")
         Sleep(SleepTime)
     }
 }
-+Down:: {
+!Down:: {
     loop 5 {
         Send("{Down}")
         Sleep(SleepTime)
     }
 }
-+Left:: {
+!Left:: {
     loop 5 {
         Send("{Left}")
         Sleep(SleepTime)
     }
 }
-+Right:: {
+!Right:: {
     loop 5 {
+        Send("{Right}")
+        Sleep(SleepTime)
+    }
+}
+/*
+快速10
+*/
++Up:: {
+    loop 10 {
+        Send("{Up}")
+        Sleep(SleepTime)
+    }
+}
++Down:: {
+    loop 10 {
+        Send("{Down}")
+        Sleep(SleepTime)
+    }
+}
++Left:: {
+    loop 10 {
+        Send("{Left}")
+        Sleep(SleepTime)
+    }
+}
++Right:: {
+    loop 10 {
         Send("{Right}")
         Sleep(SleepTime)
     }
