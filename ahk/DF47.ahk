@@ -6,7 +6,7 @@
 /*
 定义常量
 */
-SleepTime := 20
+SleepTime := 5
 
 /*
 窗口移动
